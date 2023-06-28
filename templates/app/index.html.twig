@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AppController!{% endblock %}
+
+{% block body %}
+    <div {{ react_component('Hello', {'fullName': 'Alex'}) }}>
+        Loading...
+    </div>
+{% endblock %}
