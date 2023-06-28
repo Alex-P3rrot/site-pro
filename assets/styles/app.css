@@ -1,3 +1,38 @@
-body {
-    background-color: lightgray;
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
+
+*{
+    font-family: 'Belanosima', sans-serif!important;
+}
+
+html, body, #root {
+    margin: 0;
+}
+
+.app {
+    display: flex;
+    position: relative;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #cecece;
+}
+::-webkit-scrollbar-thumb {
+    background: #9d9d9d;
+}
+::-webkit-scrollbar-track:hover {
+    background: #656565;
+}
+
+.project-card {
+    border-radius: 15px!important;
+}
+.project-card:hover {
+    cursor: pointer;
+}
+
+*:focus-visible, *:focus {
+    outline: none!important;
 }

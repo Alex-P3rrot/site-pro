@@ -7,9 +7,7 @@
         "@symfony/stimulus-bridge": "^3.2.0",
         "@symfony/ux-react": "file:vendor/symfony/ux-react/assets",
         "@symfony/webpack-encore": "^4.0.0",
-        "autoprefixer": "^10.4.14",
         "core-js": "^3.23.0",
-        "postcss": "^8.4.24",
         "postcss-loader": "^7.3.3",
         "react": "^18.0",
         "react-dom": "^18.0",
@@ -25,5 +23,11 @@
         "dev": "encore dev",
         "watch": "encore dev --watch",
         "build": "encore production --progress"
+    },
+    "dependencies": {
+        "@emotion/react": "^11.11.1",
+        "@emotion/styled": "^11.11.0",
+        "@mui/icons-material": "^5.11.16",
+        "@mui/material": "^5.13.6"
     }
 }
