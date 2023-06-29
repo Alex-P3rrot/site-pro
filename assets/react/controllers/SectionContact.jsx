@@ -15,7 +15,7 @@ export function SectionContact() {
 
     return (
         <Box id="sectionContact" textAlign="center" padding={20}>
-            <Typography variant="h5">Contact</Typography>
+            <Typography variant="h4">Contact</Typography>
             <Box display="flex" justifyContent="center" alignItems="center" paddingY={5} sx={{'& form': {width: '70%'}}}>
                 <Formik sx={{width: "100%", marginLeft: "50%", transform: "translate(-50%)"}} onSubmit={handleSubmit}
                         initialValues={initialValues} validationSchema={validationSchema}>
