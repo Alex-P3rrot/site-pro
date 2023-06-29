@@ -10,7 +10,7 @@ export function Project(props) {
     const [open, setOpen] = useState(false)
 
     return (
-        <div>
+        <Box display="flex" justifyContent="center">
             <Card className="project-card" sx={{...colors.palette.card, pt: 1, maxWidth: '400px'}} onClick={() => setOpen(true)}>
                 <CardMedia sx={{height: '100px', backgroundSize: 'contain', backgroundPosition: '50 50'}} image={src}/>
                 <CardHeader sx={{textAlign: 'center', pt: 3}} title={title}/>
@@ -22,7 +22,7 @@ export function Project(props) {
                     <ModalProject title={title} stack={stack}/>
                 </Box>
             </Modal>
-        </div>
+        </Box>
     )
 }
 

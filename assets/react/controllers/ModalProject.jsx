@@ -1,7 +1,6 @@
 import React, {useState} from "react"
 import {Box, ImageList, ImageListItem, Link, Modal, Typography, useTheme} from "@mui/material";
 import {ModalCarousel} from "./ModalCarousel";
-import {themeColors} from "../theme";
 
 const imagesArray = require('../../images/imagesData.json')
 
@@ -11,7 +10,6 @@ export function ModalProject(props) {
     const [open, setOpen] = useState(false)
     const [currentId, setCurrentId] = useState()
     const theme = useTheme()
-    const color = themeColors(theme.palette.mode)
     const updateId = (id) => setCurrentId(id)
     const handleModalImageOpen = id => {
         setCurrentId(id)
@@ -21,7 +19,7 @@ export function ModalProject(props) {
     const handleClose = () => setOpen(false)
 
     return (
-        <div style={{height: '100%'}}>
+        <Box height="100%">
             <ImageList sx={{height: '100%', justifyContent: 'center', alignItems: 'center', marginY: 0}}
                        cols={3} gap={25}>
                 {imageList.map((item, id) => (
@@ -40,7 +38,7 @@ export function ModalProject(props) {
                 <Typography><u>Stack technique</u> : {stack.join(', ')}</Typography>
                 <Typography><Link sx={theme.palette.mode === 'dark' ? {color: '#fcfcfc'} : {color: '#141b2d'}} href="https://ohani.pf">Visiter le site</Link></Typography>
             </Box>
-        </div>
+        </Box>
     )
 }
 
