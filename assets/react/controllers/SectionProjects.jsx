@@ -22,5 +22,5 @@ const projectsData = [
         description: "E-commerce d'un magasin de vêtements pour femme à Tahiti",
         logo: require('../../images/Web_vert.png'),
         stack: ['PHP8', 'Symfony6', 'JavaScript', 'Vue.js']
-    },
+    }
 ]
