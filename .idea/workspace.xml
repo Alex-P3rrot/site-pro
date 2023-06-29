@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e974259-3784-4178-9d10-4b4bf87e7ea8" name="Changes" comment="filter">
-      <change afterPath="$PROJECT_DIR$/assets/react/controllers/SectionContact.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/react/controllers/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/react/controllers/ModalProject.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/ModalProject.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/react/controllers/Project.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/Project.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/react/controllers/SectionProjects.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/SectionProjects.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/react/controllers/SectionTitle.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/SectionTitle.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/react/controllers/Topbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/Topbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="7e974259-3784-4178-9d10-4b4bf87e7ea8" name="Changes" comment="Refacto project section" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -215,7 +203,7 @@
       <workItem from="1687946153974" duration="20157000" />
       <workItem from="1687984125522" duration="112000" />
       <workItem from="1688018746770" duration="7222000" />
-      <workItem from="1688041666084" duration="4342000" />
+      <workItem from="1688041666084" duration="5052000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <option name="closed" value="true" />
@@ -249,7 +237,23 @@
       <option name="project" value="LOCAL" />
       <updated>1688030111667</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Section contact">
+      <option name="closed" value="true" />
+      <created>1688047342494</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1688047342494</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Refacto project section">
+      <option name="closed" value="true" />
+      <created>1688047377018</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1688047377018</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,7 +275,9 @@
     <MESSAGE value="Project component" />
     <MESSAGE value="Refacto carousel" />
     <MESSAGE value="filter" />
-    <option name="LAST_COMMIT_MESSAGE" value="filter" />
+    <MESSAGE value="Section contact" />
+    <MESSAGE value="Refacto project section" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refacto project section" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
