@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Email</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: #171f34;
+            color: white;
+            font-family: 'Belanosima', sans-serif!important;
+        }
+        header {
+            padding: 1rem 2rem;
+            text-align: center
+        }
+        header div {
+            width: 10%
+        }
+        header h2 {
+            width: 90%;
+        }
+        section {
+            padding: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="https://devalex.fr/logoModeDark.png" width="150" alt="Logo">
+        </div>
+        <h2>Contact client</h2>
+    </header>
+    <section>
+        <p><u>Email</u> : {{ email }}</p>
+        <br>
+        <p>{{ message }}</p>
+    </section>
+</body>
+</html>

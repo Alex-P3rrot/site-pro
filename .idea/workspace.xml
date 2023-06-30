@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e974259-3784-4178-9d10-4b4bf87e7ea8" name="Changes" comment="Mobile responsive">
+    <list default="true" id="7e974259-3784-4178-9d10-4b4bf87e7ea8" name="Changes" comment="Mobile responsive carousel &amp; handle touch event">
+      <change afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logoModeLight.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mail.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/react/controllers/ModalCarousel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/ModalCarousel.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/react/controllers/ModalProject.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/ModalProject.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/react/controllers/Project.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/Project.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AppController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AppController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +170,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/var/www/react-dashboard",
+    "last_opened_file_path": "/var/www/site-pro/public",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -180,6 +183,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/assets/images" />
       <recent name="$PROJECT_DIR$/assets/styles" />
       <recent name="$PROJECT_DIR$/assets/react/controllers" />
@@ -207,7 +211,7 @@
       <workItem from="1688018746770" duration="7222000" />
       <workItem from="1688041666084" duration="6213000" />
       <workItem from="1688050749859" duration="5457000" />
-      <workItem from="1688111624665" duration="7156000" />
+      <workItem from="1688111624665" duration="10553000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <option name="closed" value="true" />
@@ -289,7 +293,15 @@
       <option name="project" value="LOCAL" />
       <updated>1688129958928</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Mobile responsive carousel &amp; handle touch event">
+      <option name="closed" value="true" />
+      <created>1688131091969</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1688131091969</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,7 +329,8 @@
     <MESSAGE value="Send mail" />
     <MESSAGE value="Responsive" />
     <MESSAGE value="Mobile responsive" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mobile responsive" />
+    <MESSAGE value="Mobile responsive carousel &amp; handle touch event" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mobile responsive carousel &amp; handle touch event" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

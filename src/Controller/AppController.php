@@ -24,18 +24,25 @@ class AppController extends AbstractController
     #[Route('/sendEmail', name: 'app_email')]
     public function sendEmail(Request $request, MailerInterface $mailer): JsonResponse
     {
-        $params = $request->request->all();
-
-        $email = (new Email())
-            ->from($params['email'])
-            ->to('perrot.alex.dev@gmail.com')
-            ->subject('Site Pro')
-            ->html("<p>{$params['message']}</p>");
-
         try {
+            $email = $request->request->get('email');
+            $message = $request->request->get('message');
+
+            $email = (new Email())
+                ->from('contact@devalex.fr')
+                ->to('contact@devalex.fr')
+                ->subject('Site Pro')
+                ->html($this->renderView('mail.html.twig', compact('message', 'email')));
+
             $mailer->send($email);
         } catch (TransportExceptionInterface $e) {
-//            dd($e->getMessage());
+            file_put_contents($this->getParameter('kernel.project_dir') .
+                DIRECTORY_SEPARATOR . 'var' .
+                DIRECTORY_SEPARATOR . 'log' .
+                DIRECTORY_SEPARATOR,
+                $e->getMessage(),
+                FILE_APPEND
+            );
             return $this->json('Une erreur est survenue, essayez à nouveau ou contactez moi via linkedin');
         }
 
