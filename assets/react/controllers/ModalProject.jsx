@@ -1,5 +1,5 @@
 import React, {useState} from "react"
-import {Box, IconButton, ImageList, ImageListItem, Link, Modal, Typography, useTheme} from "@mui/material";
+import {Box, ImageList, ImageListItem, Link, Modal, Typography, useTheme} from "@mui/material";
 import {ModalCarousel} from "./ModalCarousel";
 import LaunchIcon from '@mui/icons-material/Launch';
 
@@ -45,11 +45,8 @@ export function ModalProject(props) {
                 {window.windowWidth > 600 ?
                     <Typography><Link sx={theme.palette.mode === 'dark' ? {color: '#fcfcfc'} : {color: '#141b2d'}}
                                       href={url}>Visiter le site</Link></Typography>
-                    : <IconButton>
-                        <Link sx={theme.palette.mode === 'dark' ? {color: '#fcfcfc'} : {color: '#141b2d'}}
-                              href={url}/>
-                        <LaunchIcon/>
-                    </IconButton>
+                    :
+                    <Link sx={theme.palette.mode === 'dark' ? {color: '#fcfcfc'} : {color: '#141b2d'}} href={url}><LaunchIcon/></Link>
                 }
             </Box>
         </Box>
@@ -62,8 +59,8 @@ const style = {
     justifyContent: 'center',
     alignItems: 'center',
     textAlign: 'center',
-    height: '100vh',
-    width: '100vw',
+    height: '100%',
+    width: '100%',
     boxShadow: 24,
     opacity: 1,
     border: 'none',

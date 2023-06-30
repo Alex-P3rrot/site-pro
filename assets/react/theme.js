@@ -1,5 +1,6 @@
 import {createContext, useMemo, useState} from "react";
-import {createTheme} from "@mui/material";
+import {createTheme, useMediaQuery} from "@mui/material";
+import {createBreakpoints} from "@mui/system";
 
 export const themeColors = (mode) => ({
     palette: {
@@ -25,6 +26,7 @@ export const themeColors = (mode) => ({
                 },
                 modal: {
                     backgroundColor: "#171f34",
+                    project: modalProjectStyle
                 },
                 background: {
                     default: "#141b2d",
@@ -51,6 +53,7 @@ export const themeColors = (mode) => ({
                 },
                 modal: {
                     backgroundColor: "#fcfcfc",
+                    project: modalProjectStyle
                 },
                 background: {
                     default: "#fcfcfc",
@@ -59,9 +62,8 @@ export const themeColors = (mode) => ({
     }
 })
 
-export const ColorModeContext = createContext({
-    toggleColorMode: () => {
-    }
+export const ThemeContext = createContext({
+    toggleColorMode: () => {}
 })
 
 export const useMode = () => {
@@ -75,5 +77,23 @@ export const useMode = () => {
 
     const theme = useMemo(() => createTheme(themeColors(mode)), [mode])
 
-    return [theme, colorMode]
+    const mobileBreakpoint = useMediaQuery(theme.breakpoints.down('sm'))
+    const xlBreakpoint = useMediaQuery(theme.breakpoints.down('xl'))
+    const lgBreakpoint = useMediaQuery(theme.breakpoints.down('lg'))
+    const mdBreakpoint = useMediaQuery(theme.breakpoints.down('md'))
+
+    return [theme, colorMode, mobileBreakpoint, xlBreakpoint, lgBreakpoint, mdBreakpoint]
+}
+
+const breakpoints = createBreakpoints({})
+const modalProjectStyle = {
+    [breakpoints.up('xs')]: {
+        padding: 2
+    },
+    [breakpoints.up('sm')]: {
+        padding: 10
+    },
+    [breakpoints.up('md')]: {
+        padding: 20
+    },
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import {Box, IconButton, Tooltip, Typography, useTheme} from "@mui/material";
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';
-import {ColorModeContext} from "../theme";
+import {ThemeContext} from "../theme";
 import {useContext} from "react";
 import CodeIcon from '@mui/icons-material/Code';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -14,7 +14,7 @@ const logoModeLight = require('../../images/logoModeLight.png')
 
 export function Topbar() {
     const theme = useTheme()
-    const colorMode = useContext(ColorModeContext)
+    const colorMode = useContext(ThemeContext)
     const toProjectSection = () => {
         const sectionProject = document.getElementById('sectionProject')
         sectionProject.scrollIntoView({behavior: "smooth"})

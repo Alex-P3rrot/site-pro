@@ -1,19 +1,17 @@
 import React from 'react';
 import {Box, CssBaseline, ThemeProvider, Typography} from "@mui/material";
-import {ColorModeContext, useMode} from "../theme";
+import {ThemeContext, useMode} from "../theme";
 import {Topbar} from "./Topbar";
 import {SectionTitle} from "./SectionTitle";
 import {SectionProjects} from "./SectionProjects";
 import {SectionContact} from "./SectionContact";
 import CopyrightIcon from '@mui/icons-material/Copyright';
-import useWindowDimensions from "../hooks/useWindowDimensions";
 
 export default function () {
-    const [theme, colorMode] = useMode()
-    useWindowDimensions()
+    const [theme, colorMode, mobileBreakpoint, xlBreakpoint, lgBreakpoint, mdBreakpoint] = useMode()
 
     return (
-        <ColorModeContext.Provider value={colorMode}>
+        <ThemeContext.Provider value={{colorMode, mobileBreakpoint, xlBreakpoint, lgBreakpoint, mdBreakpoint}}>
             <ThemeProvider theme={theme}>
                 <CssBaseline/>
                 <div className="App">
@@ -28,6 +26,6 @@ export default function () {
                     </Box>
                 </div>
             </ThemeProvider>
-        </ColorModeContext.Provider>
+        </ThemeContext.Provider>
     );
 }

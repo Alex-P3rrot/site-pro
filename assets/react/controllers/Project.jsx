@@ -8,10 +8,22 @@ export function Project(props) {
     const theme = useTheme()
     const colors = themeColors(theme.palette.mode)
     const [open, setOpen] = useState(false)
+    const style = {
+        ...theme.palette.modal.project,
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100%',
+        width: '100%',
+        boxShadow: 24,
+        opacity: 1,
+        ':hover': {cursor: 'pointer'}
+    }
 
     return (
         <Box display="flex" justifyContent="center">
-            <Card className="project-card" sx={{...colors.palette.card, pt: 1, maxWidth: '400px'}} onClick={() => setOpen(true)}>
+            <Card className="project-card" sx={{...colors.palette.card, pt: 1, maxWidth: '400px'}}
+                  onClick={() => setOpen(true)}>
                 <CardMedia sx={{height: '100px', backgroundSize: 'contain', backgroundPosition: '50 50'}} image={src}/>
                 <CardHeader sx={{textAlign: 'center', pt: 3}} title={title}/>
                 <Divider/>
@@ -26,14 +38,3 @@ export function Project(props) {
     )
 }
 
-const style = {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    padding: window.windowWidth > 600 ? 25 : 2,
-    height: '100vh',
-    width: '100vw',
-    boxShadow: 24,
-    opacity: 1,
-    ':hover': {cursor: 'pointer'}
-}

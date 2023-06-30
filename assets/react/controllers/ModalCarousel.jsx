@@ -1,12 +1,30 @@
-import React, {useState} from 'react'
-import {Box, IconButton, Typography} from "@mui/material";
+import React, {useContext, useState} from 'react'
+import {Box, IconButton} from "@mui/material";
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 import CloseIcon from '@mui/icons-material/Close';
+import {ThemeContext} from "../theme";
 
 export function ModalCarousel(props) {
     const {imagesArray, title, handleCloseModalImage, currentId, handleChange} = props
     const [currentImage, setCurrentImage] = useState(require(`../../images/${title}/${imagesArray[currentId]}`))
+    const {mobileBreakpoint, xlBreakpoint, lgBreakpoint, mdBreakpoint} = useContext(ThemeContext)
+    const imageSize = () => {
+        let style
+        if (xlBreakpoint) {
+            style = {maxWidth: '80%', maxHeight: '80%'}
+        }
+        if (lgBreakpoint) {
+            style = {maxWidth: '85%', maxHeight: '85%'}
+        }
+        if (mdBreakpoint) {
+            style = {maxWidth: '80%', maxHeight: '80%'}
+        }
+        if (mobileBreakpoint) {
+            style = {maxWidth: '100%', maxHeight: '100%'}
+        }
+        return style
+    }
 
     const handleNext = () => {
         if (imagesArray.length - 1 >= currentId + 1) {
@@ -43,24 +61,24 @@ export function ModalCarousel(props) {
     }
 
     return (
-        <Box display="flex" alignItems="center" justifyContent="space-between">
+        <Box width="100vw" display="flex" alignItems="center" justifyContent="space-between">
             <IconButton sx={{position: 'absolute', top: 15, right: 15}} onClick={handleCloseModalImage}>
                 <CloseIcon/>
             </IconButton>
             {
-                window.windowWidth > 600 ?
+                !mobileBreakpoint ?
                     <IconButton sx={{marginLeft: 5}} onClick={handlePrev}>
                         <NavigateBeforeIcon/>
                     </IconButton>
                     : null
             }
             <img src={currentImage} alt="image"
-                 style={{maxWidth: '100%', maxHeight: '100%'}}
+                 style={imageSize()}
                  onTouchStart={handleTouchStart}
                  onTouchMove={handleTouchMove}
                  onTouchEnd={handleTouchEnd}/>
             {
-                window.windowWidth > 600 ?
+                !mobileBreakpoint ?
                     <IconButton sx={{marginRight: 5}} onClick={handleNext}>
                         <NavigateNextIcon/>
                     </IconButton>
