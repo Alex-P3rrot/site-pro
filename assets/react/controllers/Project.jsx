@@ -4,7 +4,7 @@ import {themeColors} from "../theme";
 import {ModalProject} from "./ModalProject";
 
 export function Project(props) {
-    const {title, description, src, stack} = props
+    const {title, url, description, src, stack} = props
     const theme = useTheme()
     const colors = themeColors(theme.palette.mode)
     const [open, setOpen] = useState(false)
@@ -19,7 +19,7 @@ export function Project(props) {
             </Card>
             <Modal sx={style} open={open} onClose={() => setOpen(false)}>
                 <Box>
-                    <ModalProject title={title} stack={stack}/>
+                    <ModalProject title={title} url={url} stack={stack}/>
                 </Box>
             </Modal>
         </Box>

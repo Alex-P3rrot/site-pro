@@ -6,7 +6,7 @@ import LaunchIcon from '@mui/icons-material/Launch';
 const imagesArray = require('../../images/imagesData.json')
 
 export function ModalProject(props) {
-    const {title, stack} = props
+    const {title, url, stack} = props
     const imageList = imagesArray[title].map(item => require(`../../images/${title}/${item}`))
     const [open, setOpen] = useState(false)
     const [currentId, setCurrentId] = useState()
@@ -44,10 +44,10 @@ export function ModalProject(props) {
                 <Typography width="90%"><u>Stack technique</u> : {stack.join(', ')}</Typography>
                 {window.windowWidth > 600 ?
                     <Typography><Link sx={theme.palette.mode === 'dark' ? {color: '#fcfcfc'} : {color: '#141b2d'}}
-                                      href="https://ohani.pf">Visiter le site</Link></Typography>
+                                      href={url}>Visiter le site</Link></Typography>
                     : <IconButton>
                         <Link sx={theme.palette.mode === 'dark' ? {color: '#fcfcfc'} : {color: '#141b2d'}}
-                              href="https://ohani.pf"/>
+                              href={url}/>
                         <LaunchIcon/>
                     </IconButton>
                 }
