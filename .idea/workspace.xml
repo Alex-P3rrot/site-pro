@@ -4,19 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e974259-3784-4178-9d10-4b4bf87e7ea8" name="Changes" comment="Update">
-      <change afterPath="$PROJECT_DIR$/assets/react/controllers/AlertMessage.jsx" afterDir="false" />
+    <list default="true" id="7e974259-3784-4178-9d10-4b4bf87e7ea8" name="Changes" comment="Send mail">
+      <change afterPath="$PROJECT_DIR$/assets/react/hooks/useWindowDimensions.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/react/controllers/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/react/controllers/ModalProject.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/ModalProject.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/react/controllers/Project.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/Project.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/react/controllers/SectionContact.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/SectionContact.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/react/controllers/SectionProjects.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/SectionProjects.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/react/controllers/SectionTitle.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/SectionTitle.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/react/controllers/Topbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/Topbar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/doctrine.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/doctrine_migrations.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/messenger.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/messenger.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AppController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AppController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,6 +159,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/webpack-encore-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/ux-react" />
       <path value="$PROJECT_DIR$/vendor/symfony/stimulus-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/mailjet-mailer" />
     </include_path>
   </component>
   <component name="ProjectId" id="2RpLq22wu7g990zj2ETRBwUnxDk" />
@@ -174,7 +174,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/var/www/site-pro",
+    "last_opened_file_path": "/var/www/react-dashboard",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -193,6 +193,7 @@
       <recent name="$PROJECT_DIR$/assets/react" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/react/hooks" />
       <recent name="$PROJECT_DIR$/assets/images/Ohani" />
       <recent name="$PROJECT_DIR$/assets/images" />
     </key>
@@ -212,7 +213,8 @@
       <workItem from="1687984125522" duration="112000" />
       <workItem from="1688018746770" duration="7222000" />
       <workItem from="1688041666084" duration="6213000" />
-      <workItem from="1688050749859" duration="5389000" />
+      <workItem from="1688050749859" duration="5457000" />
+      <workItem from="1688111624665" duration="6011000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <option name="closed" value="true" />
@@ -278,7 +280,15 @@
       <option name="project" value="LOCAL" />
       <updated>1688049339063</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Send mail">
+      <option name="closed" value="true" />
+      <created>1688056203072</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1688056203072</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,7 +313,8 @@
     <MESSAGE value="Section contact" />
     <MESSAGE value="Refacto project section" />
     <MESSAGE value="Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update" />
+    <MESSAGE value="Send mail" />
+    <option name="LAST_COMMIT_MESSAGE" value="Send mail" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

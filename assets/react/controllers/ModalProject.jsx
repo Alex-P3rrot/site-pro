@@ -1,6 +1,7 @@
 import React, {useState} from "react"
-import {Box, ImageList, ImageListItem, Link, Modal, Typography, useTheme} from "@mui/material";
+import {Box, IconButton, ImageList, ImageListItem, Link, Modal, Typography, useTheme} from "@mui/material";
 import {ModalCarousel} from "./ModalCarousel";
+import LaunchIcon from '@mui/icons-material/Launch';
 
 const imagesArray = require('../../images/imagesData.json')
 
@@ -31,12 +32,25 @@ export function ModalProject(props) {
             </ImageList>
             <Modal open={open} onClose={() => setOpen(false)} sx={style}>
                 <Box>
-                    <ModalCarousel currentId={currentId} imagesArray={imagesArray[title]} handleChange={updateId} title={title} handleCloseModalImage={handleClose}/>
+                    <ModalCarousel currentId={currentId} imagesArray={imagesArray[title]} handleChange={updateId}
+                                   title={title} handleCloseModalImage={handleClose}/>
                 </Box>
             </Modal>
-            <Box display="flex" alignItems="center" justifyContent="space-between" padding={2} sx={theme.palette.mode === 'dark' ? {backgroundColor: '#141b2d',color: '#fcfcfc'} : {backgroundColor: '#fcfcfc',color: '#141b2d'}}>
-                <Typography><u>Stack technique</u> : {stack.join(', ')}</Typography>
-                <Typography><Link sx={theme.palette.mode === 'dark' ? {color: '#fcfcfc'} : {color: '#141b2d'}} href="https://ohani.pf">Visiter le site</Link></Typography>
+            <Box display="flex" alignItems="center" justifyContent="space-between" padding={2}
+                 sx={theme.palette.mode === 'dark' ? {
+                     backgroundColor: '#141b2d',
+                     color: '#fcfcfc'
+                 } : {backgroundColor: '#fcfcfc', color: '#141b2d'}}>
+                <Typography width="90%"><u>Stack technique</u> : {stack.join(', ')}</Typography>
+                {window.windowWidth > 600 ?
+                    <Typography><Link sx={theme.palette.mode === 'dark' ? {color: '#fcfcfc'} : {color: '#141b2d'}}
+                                      href="https://ohani.pf">Visiter le site</Link></Typography>
+                    : <IconButton>
+                        <Link sx={theme.palette.mode === 'dark' ? {color: '#fcfcfc'} : {color: '#141b2d'}}
+                              href="https://ohani.pf"/>
+                        <LaunchIcon/>
+                    </IconButton>
+                }
             </Box>
         </Box>
     )

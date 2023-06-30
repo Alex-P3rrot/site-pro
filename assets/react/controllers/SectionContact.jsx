@@ -15,19 +15,25 @@ setLocale({
 })
 
 export function SectionContact() {
-    const [email, setEmail] = useState(localStorage.getItem('formEmail'))
-    const [message, setMessage] = useState(localStorage.getItem('formMessage'))
+    const [email, setEmail] = useState('')
+    const [message, setMessage] = useState('')
     const [formError, setFormError] = useState()
     const [formSuccess, setFormSuccess] = useState()
     useEffect(() => {
+        const storedEmail = sessionStorage.getItem('formEmail')
+        const storedMessage = sessionStorage.getItem('formMessage')
+        if (storedEmail != null) setEmail(storedEmail)
+        if (storedMessage != null) setMessage(storedMessage)
+    }, [])
+    useEffect(() => {
         const timer = setTimeout(() => {
-            localStorage.setItem('formEmail', email)
+            sessionStorage.setItem('formEmail', email)
         }, 500)
         return () => clearTimeout(timer)
     }, [email])
     useEffect(() => {
         const timer = setTimeout(() => {
-            localStorage.setItem('formMessage', message)
+            sessionStorage.setItem('formMessage', message)
         }, 500)
         return () => clearTimeout(timer)
     }, [message])
@@ -51,13 +57,13 @@ export function SectionContact() {
     }
 
     return (
-        <Box id="sectionContact" textAlign="center" padding={20}>
+        <Box id="sectionContact" textAlign="center" padding={window.windowWidth > 600 ? 20 : 2} paddingTop={window.windowWidth > 600 ? 0 : 20}>
             <Typography variant="h4">Contact</Typography>
             {formError !== undefined ? <AlertMessage sx={{marginTop: 5}} type="error" message={formError} /> : null}
             {formSuccess !== undefined ? <AlertMessage sx={{marginTop: 5}} type="success" message={formSuccess} /> : null}
             <Box display="flex" justifyContent="center" alignItems="center" paddingY={5}
                  sx={{'& form': {width: '70%'}}}>
-                <form style={{width: "100%", marginLeft: "50%", transform: "translate(-50%)"}}
+                <form style={window.windowWidth > 600 ? {marginLeft: "50%", transform: "translate(-50%)"} : {}}
                       onSubmit={handleSubmitForm}>
                     <Box display="flex" flexDirection="column" gap={2}>
                         <TextField sx={{borderRadius: '12px', '& div, & input': {borderRadius: '12px'}}}
@@ -66,8 +72,7 @@ export function SectionContact() {
                                    value={email}
                                    onChange={event => setEmail(event.target.value)}
                                    type="email"/>
-                        <StyledTextarea sx={{width: '100%'}}
-                                        placeholder="Message"
+                        <StyledTextarea placeholder="Message"
                                         name="message"
                                         value={message !== null ? message : ''}
                                         onChange={event => setMessage(event.target.value)}
@@ -90,7 +95,8 @@ const validationSchema = object({
 
 const StyledTextarea = styled(TextareaAutosize)(
     ({theme}) => `
-    width: 320px;
+    width: 100%;
+    height: 150px!important;
     font-family: IBM Plex Sans, sans-serif;
     font-size: 0.875rem;
     font-weight: 400;

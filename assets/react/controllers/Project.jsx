@@ -27,9 +27,8 @@ export function Project(props) {
 }
 
 const style = {
-    position: 'absolute',
     display: 'flex',
-    padding: 25,
+    padding: window.windowWidth > 600 ? 25 : 2,
     justifyContent: 'center',
     alignItems: 'center',
     height: '100vh',

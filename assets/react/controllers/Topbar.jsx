@@ -1,5 +1,5 @@
 import React from 'react';
-import {Box, IconButton, Link, Tooltip, Typography, useTheme} from "@mui/material";
+import {Box, IconButton, Tooltip, Typography, useTheme} from "@mui/material";
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import {ColorModeContext} from "../theme";
@@ -8,6 +8,7 @@ import CodeIcon from '@mui/icons-material/Code';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import ChatIcon from '@mui/icons-material/Chat';
+
 const logoModeDark = require('../../images/logoModeDark.png')
 const logoModeLight = require('../../images/logoModeLight.png')
 
@@ -15,18 +16,18 @@ export function Topbar() {
     const theme = useTheme()
     const colorMode = useContext(ColorModeContext)
     const toProjectSection = () => {
-        const sectionProject =  document.getElementById('sectionProject')
+        const sectionProject = document.getElementById('sectionProject')
         sectionProject.scrollIntoView({behavior: "smooth"})
     }
     const toContactSection = () => {
-        const sectionContact =  document.getElementById('sectionContact')
+        const sectionContact = document.getElementById('sectionContact')
         sectionContact.scrollIntoView({behavior: "smooth"})
     }
 
     return (
         <Box display="flex" justifyContent="space-between" p={2}>
             <Box>
-                <img src={theme.palette.mode === "dark" ? logoModeDark : logoModeLight} height={100} alt="logo"/>
+                <img src={theme.palette.mode === "dark" ? logoModeDark : logoModeLight} height={window.windowWidth > 600 ? 100 : 70} alt="logo"/>
             </Box>
             <Box>
                 <Tooltip title={<Typography>Réalisations</Typography>}>
