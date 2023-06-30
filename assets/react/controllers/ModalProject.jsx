@@ -58,7 +58,9 @@ export function ModalProject(props) {
 
 
 const style = {
-    position: 'absolute',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
     textAlign: 'center',
     height: '100vh',
     width: '100vw',

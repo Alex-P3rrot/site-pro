@@ -26,19 +26,46 @@ export function ModalCarousel(props) {
             handleChange(currentId - 1)
         }
     }
+    let direction
+    let start
+    const handleTouchStart = event => {
+        start = event.touches[0].clientX
+    }
+    const handleTouchMove = event => {
+        direction = start - event.touches[0].clientX
+    }
+    const handleTouchEnd = event => {
+        if (direction > 0) {
+            handleNext()
+        } else {
+            handlePrev()
+        }
+    }
 
     return (
         <Box display="flex" alignItems="center" justifyContent="space-between">
             <IconButton sx={{position: 'absolute', top: 15, right: 15}} onClick={handleCloseModalImage}>
                 <CloseIcon/>
             </IconButton>
-            <IconButton sx={{marginLeft: 5}} onClick={handlePrev}>
-                <NavigateBeforeIcon/>
-            </IconButton>
-            <img src={currentImage} alt="image" style={{maxWidth: '100%', maxHeight: '100%'}}/>
-            <IconButton sx={{marginRight: 5}} onClick={handleNext}>
-                <NavigateNextIcon/>
-            </IconButton>
+            {
+                window.windowWidth > 600 ?
+                    <IconButton sx={{marginLeft: 5}} onClick={handlePrev}>
+                        <NavigateBeforeIcon/>
+                    </IconButton>
+                    : null
+            }
+            <img src={currentImage} alt="image"
+                 style={{maxWidth: '100%', maxHeight: '100%'}}
+                 onTouchStart={handleTouchStart}
+                 onTouchMove={handleTouchMove}
+                 onTouchEnd={handleTouchEnd}/>
+            {
+                window.windowWidth > 600 ?
+                    <IconButton sx={{marginRight: 5}} onClick={handleNext}>
+                        <NavigateNextIcon/>
+                    </IconButton>
+                    : null
+            }
         </Box>
     )
 }

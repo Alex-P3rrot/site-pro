@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e974259-3784-4178-9d10-4b4bf87e7ea8" name="Changes" comment="Send mail">
-      <change afterPath="$PROJECT_DIR$/assets/react/hooks/useWindowDimensions.jsx" afterDir="false" />
+    <list default="true" id="7e974259-3784-4178-9d10-4b4bf87e7ea8" name="Changes" comment="Mobile responsive">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/react/controllers/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/react/controllers/ModalCarousel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/ModalCarousel.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/react/controllers/ModalProject.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/ModalProject.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/react/controllers/Project.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/Project.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/react/controllers/SectionContact.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/SectionContact.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/react/controllers/SectionProjects.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/SectionProjects.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/react/controllers/SectionTitle.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/SectionTitle.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/react/controllers/Topbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/Topbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +207,7 @@
       <workItem from="1688018746770" duration="7222000" />
       <workItem from="1688041666084" duration="6213000" />
       <workItem from="1688050749859" duration="5457000" />
-      <workItem from="1688111624665" duration="6011000" />
+      <workItem from="1688111624665" duration="7156000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <option name="closed" value="true" />
@@ -288,7 +281,15 @@
       <option name="project" value="LOCAL" />
       <updated>1688056203072</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Mobile responsive">
+      <option name="closed" value="true" />
+      <created>1688129958928</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1688129958928</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -314,7 +315,9 @@
     <MESSAGE value="Refacto project section" />
     <MESSAGE value="Update" />
     <MESSAGE value="Send mail" />
-    <option name="LAST_COMMIT_MESSAGE" value="Send mail" />
+    <MESSAGE value="Responsive" />
+    <MESSAGE value="Mobile responsive" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mobile responsive" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
