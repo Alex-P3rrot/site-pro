@@ -3,11 +3,11 @@ import {Box, ImageList, ImageListItem, Link, Modal, Typography, useTheme} from "
 import {ModalCarousel} from "./ModalCarousel";
 import LaunchIcon from '@mui/icons-material/Launch';
 
-const imagesArray = require('../../images/imagesData.json')
+const imagesArray = require('../../../images/imagesData.json')
 
 export function ModalProject(props) {
     const {title, url, stack} = props
-    const imageList = imagesArray[title].map(item => require(`../../images/${title}/${item}`))
+    const imageList = imagesArray[title].map(item => require(`../../../images/${title}/${item}`))
     const [open, setOpen] = useState(false)
     const [currentId, setCurrentId] = useState()
     const theme = useTheme()

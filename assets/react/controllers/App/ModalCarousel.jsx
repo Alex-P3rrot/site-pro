@@ -3,11 +3,12 @@ import {Box, IconButton} from "@mui/material";
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 import CloseIcon from '@mui/icons-material/Close';
-import {ThemeContext} from "../theme";
+import {ThemeContext} from "./theme";
 
+const IMAGE_BASE_PATH = '../../../images/'
 export function ModalCarousel(props) {
     const {imagesArray, title, handleCloseModalImage, currentId, handleChange} = props
-    const [currentImage, setCurrentImage] = useState(require(`../../images/${title}/${imagesArray[currentId]}`))
+    const [currentImage, setCurrentImage] = useState(require(`${IMAGE_BASE_PATH}${title}/${imagesArray[currentId]}`))
     const {mobileBreakpoint, xlBreakpoint, lgBreakpoint, mdBreakpoint} = useContext(ThemeContext)
     const imageSize = () => {
         let style
@@ -28,19 +29,19 @@ export function ModalCarousel(props) {
 
     const handleNext = () => {
         if (imagesArray.length - 1 >= currentId + 1) {
-            setCurrentImage(() => require(`../../images/${title}/${imagesArray[currentId + 1]}`))
+            setCurrentImage(() => require(`${IMAGE_BASE_PATH}${title}/${imagesArray[currentId + 1]}`))
             handleChange(currentId + 1)
         } else {
-            setCurrentImage(() => require(`../../images/${title}/${imagesArray[0]}`))
+            setCurrentImage(() => require(`${IMAGE_BASE_PATH}${title}/${imagesArray[0]}`))
             handleChange(0)
         }
     }
     const handlePrev = () => {
         if (currentId === 0) {
-            setCurrentImage(() => require(`../../images/${title}/${imagesArray[imagesArray.length - 1]}`))
+            setCurrentImage(() => require(`${IMAGE_BASE_PATH}${title}/${imagesArray[imagesArray.length - 1]}`))
             handleChange(imagesArray.length - 1)
         } else {
-            setCurrentImage(() => require(`../../images/${title}/${imagesArray[currentId - 1]}`))
+            setCurrentImage(() => require(`${IMAGE_BASE_PATH}${title}/${imagesArray[currentId - 1]}`))
             handleChange(currentId - 1)
         }
     }

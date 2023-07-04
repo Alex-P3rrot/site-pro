@@ -16,6 +16,7 @@ export function SectionProjects() {
                              stack={project.stack}/>
                 ))}
             </Box>
+            <a href="/react-dashboard">React dashboard</a>
         </Box>
     )
 }
@@ -25,7 +26,7 @@ const projectsData = [
         title: "Ohani",
         url: "https://ohani.pf",
         description: "E-commerce d'un magasin de vêtements pour femme à Tahiti",
-        logo: require('../../images/Web_vert.png'),
+        logo: require('../../../images/Web_vert.png'),
         stack: ['PHP8', 'Symfony6', 'JavaScript', 'Vue.js']
     }
 ]

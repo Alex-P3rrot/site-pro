@@ -16,9 +16,13 @@ class AppController extends AbstractController
     #[Route('/', name: 'app_app')]
     public function index(): Response
     {
-        return $this->render('app/index.html.twig', [
-            'controller_name' => 'AppController',
-        ]);
+        return $this->render('app/index.html.twig');
+    }
+
+    #[Route('/react-dashboard', name: 'app_react_dashboard')]
+    public function reactDashboard(): Response
+    {
+        return $this->render('app/react-dashboard.html.twig');
     }
 
     #[Route('/sendEmail', name: 'app_email')]

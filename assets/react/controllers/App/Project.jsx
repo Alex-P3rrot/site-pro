@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {Box, Card, CardContent, CardHeader, CardMedia, Divider, Modal, useTheme} from "@mui/material";
-import {themeColors} from "../theme";
+import {themeColors} from "./theme";
 import {ModalProject} from "./ModalProject";
 
 export function Project(props) {
