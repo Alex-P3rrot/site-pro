@@ -25,23 +25,22 @@ const ACTIONS = {
 }
 
 export function Calendar() {
-    const initialStateEventFormData = {id: 0, title: '', description: '', start: null}
+    const initialStateEvent = {id: 0, title: '', description: '', start: null}
     const theme = useTheme()
     const colors = themeColors(theme.palette.mode)
     const [events, setEvents] = useState([{id: 0, title: 'Test', start: new Date()}])
-    const [eventFormData, setEventFormData] = useState(initialStateEventFormData)
+    const [eventFormData, setEventFormData] = useState(initialStateEvent)
     const [open, setOpen] = useState(false)
     const [anchorEl, setAnchorEl] = useState(null)
     const [isEditing, setIsEditing] = useState(false)
     const [selectedEventId, setSelectedEventId] = useState(null)
-    const [selectedEvent, setSelectedEvent] = useState({title: '', description: ''})
+    const [selectedEvent, setSelectedEvent] = useState(initialStateEvent)
     let openPopover = Boolean(anchorEl)
     const handleSelectDate = (event) => {
         setEventFormData(prevState => ({...prevState, start: event.start, id: events.length}))
         setOpen(true)
     }
     const handleSaveEvent = type => {
-        setOpen(false)
         if (type === ACTIONS.create) {
             setEvents(prevState => [...prevState, eventFormData])
         }
@@ -51,23 +50,26 @@ export function Calendar() {
             setIsEditing(false)
         }
         setAnchorEl(null)
-        setEventFormData(initialStateEventFormData)
+        setEventFormData(initialStateEvent)
+        setOpen(false)
     }
     const handleEdit = () => {
+        setIsEditing(true)
         const event = events.find(el => el.id === selectedEventId)
         setSelectedEvent(event)
         setOpen(true)
     }
     const handleDelete = () => {
         setEvents(prevState => prevState.filter(el => el.id !== selectedEventId))
+        setSelectedEvent(initialStateEvent)
         setAnchorEl(null)
     }
     const handleClosePopover = () => {
         setAnchorEl(null)
     }
     const handleCloseDialog = () => {
+        setEventFormData(initialStateEvent)
         setOpen(false)
-        setEventFormData(initialStateEventFormData)
     }
     const handleChangeDate = (event) => {
         setEvents(prevState => prevState.map(el => {
@@ -108,7 +110,6 @@ export function Calendar() {
                     select={handleSelectDate}
                     events={events || []}
                     eventClick={infos => {
-                        setIsEditing(true)
                         setSelectedEventId(Number(infos.event.id))
                         setAnchorEl(infos.el)
                     }}
@@ -120,12 +121,12 @@ export function Calendar() {
                     }}>
                 </FullCalendar>
             </Box>
-            <Dialog open={open} onClose={handleCloseDialog}>
+            <Dialog open={open} onClose={handleCloseDialog} sx={{'& .MuiPaper-root':{maxWidth:'100%'}}}>
                 <Box width="50vw" height="75hv" padding={5} backgroundColor={colors.palette.background.default}>
                     <Typography variant="h6" textAlign="center">{isEditing ? 'Edit' : 'Create new event'}</Typography>
                     <Stack spacing={2}>
                         <FormControl>
-                            <Button sx={{
+                            <Typography sx={{
                                 width: 'fit-content',
                                 background: 'transparent',
                                 color: '#fff',
@@ -138,7 +139,7 @@ export function Calendar() {
                                             ? eventFormData.start.toLocaleDateString(['fr-FR'], {dateStyle: 'full'})
                                             : null
                                 }
-                            </Button>
+                            </Typography>
                         </FormControl>
                         <FormControl>
                             <TextField autoFocus

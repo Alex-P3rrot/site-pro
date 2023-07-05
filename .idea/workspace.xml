@@ -4,33 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e974259-3784-4178-9d10-4b4bf87e7ea8" name="Changes" comment="Update theme">
-      <change afterPath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/components/CalendarEventList.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/components/Header.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/components/StyledTextarea.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/mockData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/theme.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/views/Calendar.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/views/Dashboard.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/views/global/SidebarApp.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/views/global/Topbar.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/views/users/UserTable.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/react/controllers/ReactDashboard.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/app/react-dashboard.html.twig" afterDir="false" />
+    <list default="true" id="7e974259-3784-4178-9d10-4b4bf87e7ea8" name="Changes" comment="Add personal project &quot;react-dashboard&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/react/controllers/AlertMessage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/App/AlertMessage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/react/controllers/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/react/controllers/ModalCarousel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/App/ModalCarousel.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/react/controllers/ModalProject.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/App/ModalProject.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/react/controllers/Project.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/App/Project.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/react/controllers/SectionContact.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/App/SectionContact.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/react/controllers/SectionProjects.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/App/SectionProjects.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/react/controllers/SectionTitle.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/App/SectionTitle.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/react/controllers/Topbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/App/Topbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/react/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/App/theme.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/views/Calendar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/views/Calendar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/react/controllers/ReactDashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/ReactDashboard.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/AppController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AppController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -185,22 +163,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/var/www/react-dashboard",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "Symfony2.SettingsForm",
-    "ts.external.directory.path": "/opt/PhpStorm-231.9161.47/plugins/javascript-impl/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/var/www/devalex&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Symfony2.SettingsForm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/opt/PhpStorm-231.9161.47/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets/react/controllers/React-Dashboard" />
@@ -237,6 +215,8 @@
       <workItem from="1688136991686" duration="5234000" />
       <workItem from="1688200648757" duration="20000" />
       <workItem from="1688480150065" duration="3261000" />
+      <workItem from="1688487057259" duration="160000" />
+      <workItem from="1688541947866" duration="2177000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <option name="closed" value="true" />
@@ -350,7 +330,15 @@
       <option name="project" value="LOCAL" />
       <updated>1688142693413</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Add personal project &quot;react-dashboard&quot;">
+      <option name="closed" value="true" />
+      <created>1688487203578</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1688487203578</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -381,7 +369,8 @@
     <MESSAGE value="Update mail" />
     <MESSAGE value="Update" />
     <MESSAGE value="Update theme" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update theme" />
+    <MESSAGE value="Add personal project &quot;react-dashboard&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add personal project &quot;react-dashboard&quot;" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

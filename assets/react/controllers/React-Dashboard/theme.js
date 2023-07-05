@@ -92,7 +92,20 @@ export const themeColors = (mode) => ({
                                 boxShadow: '0 0 10px #fcfcfc',
                                 backgroundColor: "#fcfcfc"
                             },
+                            '& a': {
+                                color: "#fcfcfc"
+                            },
                             backgroundColor: "#fcfcfc"
+                        }
+                    }
+                },
+                MuiLink: {
+                    styleOverrides: {
+                        root: {
+                            cursor: 'pointer',
+                            display: 'flex',
+                            alignItems: 'center',
+                            color: "#fcfcfc"
                         }
                     }
                 }
@@ -105,7 +118,20 @@ export const themeColors = (mode) => ({
                                 boxShadow: '0 0 10px #141b2d',
                                 backgroundColor: "#141b2d"
                             },
+                            '& a': {
+                                color: "#141b2d"
+                            },
                             backgroundColor: "#141b2d"
+                        }
+                    }
+                },
+                MuiLink: {
+                    styleOverrides: {
+                        root: {
+                            cursor: 'pointer',
+                            display: 'flex',
+                            alignItems: 'center',
+                            color: "#141b2d"
                         }
                     }
                 }
