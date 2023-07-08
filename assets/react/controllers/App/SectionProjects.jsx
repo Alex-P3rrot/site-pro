@@ -13,10 +13,11 @@ export function SectionProjects() {
                              url={project.url}
                              description={project.description}
                              src={project.logo}
-                             stack={project.stack}/>
+                             stack={project.stack}
+                             imageDatasKey={project.imageDatasKey}
+                             urlTarget={project.urlTarget}/>
                 ))}
             </Box>
-            <a href="/react-dashboard">React dashboard</a>
         </Box>
     )
 }
@@ -25,8 +26,19 @@ const projectsData = [
     {
         title: "Ohani",
         url: "https://ohani.pf",
+        urlTarget: '_blank',
         description: "E-commerce d'un magasin de vêtements pour femme à Tahiti",
         logo: require('../../../images/Web_vert.png'),
-        stack: ['PHP8', 'Symfony6', 'JavaScript', 'Vue.js']
+        stack: ['PHP8', 'Symfony6', 'JavaScript', 'Vue.js'],
+        imageDatasKey: 'Ohani'
+    },
+    {
+        title: "React dashboard",
+        url: "/react-dashboard",
+        urlTarget: '',
+        description: "Interface d'administration, projet de veille.",
+        logo: require('../../../images/ReactDashboard/dashboard.png'),
+        stack: ['React.js'],
+        imageDatasKey: 'ReactDashboard'
     }
 ]

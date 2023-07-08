@@ -40,3 +40,10 @@ html, body, #root {
 *:focus-visible, *:focus {
     outline: none !important;
 }
+
+.menuItem {
+    color: rgba(255, 255, 255, 0.85);
+}
+.menuItemLight {
+    color: rgba(0, 0, 0, 0.85);
+}

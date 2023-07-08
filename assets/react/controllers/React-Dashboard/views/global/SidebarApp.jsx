@@ -12,6 +12,7 @@ import GroupsIcon from "@mui/icons-material/Groups";
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import SettingsApplicationsIcon from '@mui/icons-material/SettingsApplications';
+import MapIcon from '@mui/icons-material/Map';
 import {themeColors} from "../../theme";
 
 export function SidebarApp() {
@@ -25,12 +26,13 @@ export function SidebarApp() {
                 component={<Link to={to}/>}
                 active={selected === title}
                 onClick={() => setSelected(title)}
+                className={theme.palette.mode === "dark" ? "menuItem" : ["menuItem", "menuItemLight"]}
                 sx={{textAlign: 'center'}}>
                 <Tooltip placement="top-start" title={title}>
 
                     {collapsed && !submenu
-                        ? <Typography sx={{textAlign: 'center'}}>{icon}</Typography>
-                        : <Typography sx={{display: 'flex', gap: 2}}>{icon} {title}</Typography>
+                        ? <Typography variant="body2" sx={{textAlign: 'center'}}>{icon}</Typography>
+                        : <Typography variant="body2" sx={{display: 'flex', gap: 2}}>{icon} {title}</Typography>
                     }
                 </Tooltip>
             </MenuItem>
@@ -70,7 +72,7 @@ export function SidebarApp() {
                     </Box>
                 </Box>
             }
-            <Box paddingTop={collapsed ? 5 : 0}>
+            <Box paddingTop={collapsed ? 5 : 0} paddingLeft={collapsed ? 1 : 3}>
                 <Menu menuItemStyles={{
                     button: ({level, active}) => {
                         if (level === 0 || level === 1) {
@@ -84,7 +86,7 @@ export function SidebarApp() {
                         }
                     },
                 }}>
-                    <ItemMenu selected={selected} setSelected={setSelected} icon={<DashboardIcon/>} to="/react-dashboard"
+                    <ItemMenu selected={selected} setSelected={setSelected} icon={<DashboardIcon/>} to="/react-dashboard/"
                               title="Dashboard"/>
                     <ItemMenu selected={selected} setSelected={setSelected} icon={<CalendarMonthIcon/>} to="/react-dashboard/calendar"
                               title="Calendrier"/>
@@ -120,21 +122,21 @@ export function SidebarApp() {
                               to="/react-dashboard/chart/line" title="Linéaire"/>
                     <ItemMenu selected={selected} setSelected={setSelected} icon={<BarChartIcon/>} to="/react-dashboard/chart/bar"
                               title="Bâtons"/>
+                    <ItemMenu selected={selected} setSelected={setSelected} icon={<MapIcon/>} to="/react-dashboard/chart/geo"
+                              title="Geo"/>
                     <SubMenu
                         rootStyles={{
                             ['.' + menuClasses.subMenuContent]: {
                                 backgroundColor: colors.palette.sidebar.backgroundColor,
                             },
-                            textAlign: collapsed ? 'center' : 'start'
                         }}
                         label={
                             collapsed
                                 ? <Tooltip placement="top-start" title="Paramètres"><SettingsApplicationsIcon/></Tooltip>
-                                : <Tooltip placement="top-start"
-                                           title="Paramètres"><Typography>Paramètres</Typography></Tooltip>
+                                : <Tooltip placement="top-start" title="Paramètres">
+                                    <Typography variant="body2">Paramètres</Typography>
+                                </Tooltip>
                         }>
-                        <ItemMenu selected={selected} setSelected={setSelected} icon={<SettingsSuggestIcon/>}
-                                  to="/react-dashboard/setting/general" title="Général" submenu={true}/>
                         <ItemMenu selected={selected} setSelected={setSelected} icon={<GroupsIcon/>} to="/react-dashboard/setting/users"
                                   title="Utilisateurs" submenu={true}/>
                     </SubMenu>

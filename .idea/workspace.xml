@@ -4,11 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e974259-3784-4178-9d10-4b4bf87e7ea8" name="Changes" comment="Add personal project &quot;react-dashboard&quot;">
+    <list default="true" id="7e974259-3784-4178-9d10-4b4bf87e7ea8" name="Changes" comment="Update">
+      <change afterPath="$PROJECT_DIR$/assets/images/ReactDashboard/dashboard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/components/charts/BarComponent.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/components/charts/GeoComponent.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/components/charts/LineComponent.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/components/charts/PieComponent.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/geoFeatures.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/mock/BarData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/mock/GeoData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/mock/LineData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/mock/PieData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/views/charts/Bar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/views/charts/Geo.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/views/charts/Line.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/views/charts/Pie.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/imagesData.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/imagesData.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/react/controllers/App/ModalCarousel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/App/ModalCarousel.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/react/controllers/App/ModalProject.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/App/ModalProject.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/react/controllers/App/Project.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/App/Project.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/react/controllers/App/SectionProjects.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/App/SectionProjects.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/views/Calendar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/views/Calendar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/views/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/views/Dashboard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/views/global/SidebarApp.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/views/global/SidebarApp.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/react/controllers/ReactDashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/ReactDashboard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/AppController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AppController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -163,29 +186,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/var/www/devalex&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;Symfony2.SettingsForm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/opt/PhpStorm-231.9161.47/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/var/www/devalex/assets/react/controllers/React-Dashboard",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "Symfony2.SettingsForm",
+    "ts.external.directory.path": "/opt/PhpStorm-231.9161.47/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets/react/controllers/React-Dashboard" />
+      <recent name="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/views" />
+      <recent name="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/components" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/assets/images" />
-      <recent name="$PROJECT_DIR$/assets/styles" />
-      <recent name="$PROJECT_DIR$/assets/react/controllers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets/react/controllers/App" />
@@ -216,7 +239,11 @@
       <workItem from="1688200648757" duration="20000" />
       <workItem from="1688480150065" duration="3261000" />
       <workItem from="1688487057259" duration="160000" />
-      <workItem from="1688541947866" duration="2177000" />
+      <workItem from="1688541947866" duration="2213000" />
+      <workItem from="1688544170551" duration="10000" />
+      <workItem from="1688545049452" duration="705000" />
+      <workItem from="1688623458811" duration="585000" />
+      <workItem from="1688801800807" duration="3830000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <option name="closed" value="true" />
@@ -338,7 +365,15 @@
       <option name="project" value="LOCAL" />
       <updated>1688487203578</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Update">
+      <option name="closed" value="true" />
+      <created>1688544153914</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1688544153914</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,10 +402,10 @@
     <MESSAGE value="Mobile responsive" />
     <MESSAGE value="Mobile responsive carousel &amp; handle touch event" />
     <MESSAGE value="Update mail" />
-    <MESSAGE value="Update" />
     <MESSAGE value="Update theme" />
     <MESSAGE value="Add personal project &quot;react-dashboard&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add personal project &quot;react-dashboard&quot;" />
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

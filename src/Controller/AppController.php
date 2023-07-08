@@ -19,7 +19,7 @@ class AppController extends AbstractController
         return $this->render('app/index.html.twig');
     }
 
-    #[Route('/react-dashboard/{param}', name: 'app_react_dashboard', requirements: ['param' => '[A-Za-z0-9\/]+'])]
+    #[Route('/react-dashboard/{param}', name: 'app_react_dashboard', requirements: ['param' => '[A-Za-z0-9\/]+'], defaults: ['param' => ''])]
     public function reactDashboard(): Response
     {
         return $this->render('app/react-dashboard.html.twig');

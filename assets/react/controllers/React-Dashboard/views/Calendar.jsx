@@ -100,7 +100,7 @@ export function Calendar() {
                 </Box>
             </Popover>
             <Header title="Calendrier"/>
-            <Box display="grid" gridTemplateColumns="15% 80%" gap="2%" paddingLeft={3}>
+            <Box display="grid" gridTemplateColumns="20% 75%" gap="2%">
                 <CalendarEventList events={events} themeColors={colors}/>
                 <FullCalendar
                     height="75vh"

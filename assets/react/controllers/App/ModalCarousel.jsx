@@ -5,10 +5,8 @@ import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 import CloseIcon from '@mui/icons-material/Close';
 import {ThemeContext} from "./theme";
 
-const IMAGE_BASE_PATH = '../../../images/'
 export function ModalCarousel(props) {
-    const {imagesArray, title, handleCloseModalImage, currentId, handleChange} = props
-    const [currentImage, setCurrentImage] = useState(require(`${IMAGE_BASE_PATH}${title}/${imagesArray[currentId]}`))
+    const {handleCloseModalImage, imagesArrayLength, currentId, currentImage, handleChange} = props
     const {mobileBreakpoint, xlBreakpoint, lgBreakpoint, mdBreakpoint} = useContext(ThemeContext)
     const imageSize = () => {
         let style
@@ -28,20 +26,16 @@ export function ModalCarousel(props) {
     }
 
     const handleNext = () => {
-        if (imagesArray.length - 1 >= currentId + 1) {
-            setCurrentImage(() => require(`${IMAGE_BASE_PATH}${title}/${imagesArray[currentId + 1]}`))
+        if (imagesArrayLength - 1 >= currentId + 1) {
             handleChange(currentId + 1)
         } else {
-            setCurrentImage(() => require(`${IMAGE_BASE_PATH}${title}/${imagesArray[0]}`))
             handleChange(0)
         }
     }
     const handlePrev = () => {
         if (currentId === 0) {
-            setCurrentImage(() => require(`${IMAGE_BASE_PATH}${title}/${imagesArray[imagesArray.length - 1]}`))
-            handleChange(imagesArray.length - 1)
+            handleChange(imagesArrayLength - 1)
         } else {
-            setCurrentImage(() => require(`${IMAGE_BASE_PATH}${title}/${imagesArray[currentId - 1]}`))
             handleChange(currentId - 1)
         }
     }
