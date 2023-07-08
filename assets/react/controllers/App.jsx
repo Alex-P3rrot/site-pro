@@ -8,10 +8,10 @@ import {SectionContact} from "./App/SectionContact";
 import CopyrightIcon from '@mui/icons-material/Copyright';
 
 export default function () {
-    const [theme, colorMode, mobileBreakpoint, xlBreakpoint, lgBreakpoint, mdBreakpoint] = useMode()
+    const [theme, colorMode, mobileBreakpoint, lgBreakpoint, mdBreakpoint] = useMode()
 
     return (
-        <ThemeContext.Provider value={{colorMode, mobileBreakpoint, xlBreakpoint, lgBreakpoint, mdBreakpoint}}>
+        <ThemeContext.Provider value={{colorMode, mobileBreakpoint, lgBreakpoint, mdBreakpoint}}>
             <ThemeProvider theme={theme}>
                 <CssBaseline/>
                 <Topbar/>

@@ -78,11 +78,10 @@ export const useMode = () => {
     const theme = useMemo(() => createTheme(themeColors(mode)), [mode])
 
     const mobileBreakpoint = useMediaQuery(theme.breakpoints.down('sm'))
-    const xlBreakpoint = useMediaQuery(theme.breakpoints.down('xl'))
     const lgBreakpoint = useMediaQuery(theme.breakpoints.down('lg'))
     const mdBreakpoint = useMediaQuery(theme.breakpoints.down('md'))
 
-    return [theme, colorMode, mobileBreakpoint, xlBreakpoint, lgBreakpoint, mdBreakpoint]
+    return [theme, colorMode, mobileBreakpoint, lgBreakpoint, mdBreakpoint]
 }
 
 const breakpoints = createBreakpoints({})

@@ -4,21 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e974259-3784-4178-9d10-4b4bf87e7ea8" name="Changes" comment="React dashboard update">
-      <change afterPath="$PROJECT_DIR$/assets/images/Ohani/11-44-09.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/Ohani/11-44-21.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/Ohani/11-44-37.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/Ohani/11-45-02.png" afterDir="false" />
+    <list default="true" id="7e974259-3784-4178-9d10-4b4bf87e7ea8" name="Changes" comment="Update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/Ohani/16-43-40.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/Ohani/16-43-51.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/Ohani/16-43-56.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/Ohani/16-44-09.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/Ohani/16-44-12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/Ohani/16-44-14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/imagesData.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/imagesData.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/react/controllers/App/ModalProject.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/App/ModalProject.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/react/controllers/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/react/controllers/App/ModalCarousel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/App/ModalCarousel.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/react/controllers/App/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/App/theme.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +167,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/var/www/devalex/assets/images/Ohani",
+    "last_opened_file_path": "/var/www/devalex",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -229,7 +219,8 @@
       <workItem from="1688544170551" duration="10000" />
       <workItem from="1688545049452" duration="705000" />
       <workItem from="1688623458811" duration="585000" />
-      <workItem from="1688801800807" duration="4395000" />
+      <workItem from="1688801800807" duration="4467000" />
+      <workItem from="1688827203199" duration="320000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <option name="closed" value="true" />
@@ -367,7 +358,15 @@
       <option name="project" value="LOCAL" />
       <updated>1688809520284</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Update">
+      <option name="closed" value="true" />
+      <created>1688810004429</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1688810004429</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -398,9 +397,9 @@
     <MESSAGE value="Update mail" />
     <MESSAGE value="Update theme" />
     <MESSAGE value="Add personal project &quot;react-dashboard&quot;" />
-    <MESSAGE value="Update" />
     <MESSAGE value="React dashboard update" />
-    <option name="LAST_COMMIT_MESSAGE" value="React dashboard update" />
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

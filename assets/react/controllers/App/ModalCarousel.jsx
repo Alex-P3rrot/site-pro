@@ -7,12 +7,9 @@ import {ThemeContext} from "./theme";
 
 export function ModalCarousel(props) {
     const {handleCloseModalImage, imagesArrayLength, currentId, currentImage, handleChange} = props
-    const {mobileBreakpoint, xlBreakpoint, lgBreakpoint, mdBreakpoint} = useContext(ThemeContext)
+    const {mobileBreakpoint, lgBreakpoint, mdBreakpoint} = useContext(ThemeContext)
     const imageSize = () => {
-        let style
-        if (xlBreakpoint) {
-            style = {maxWidth: '80%', maxHeight: '80%'}
-        }
+        let style = {maxWidth: '80%', maxHeight: '80%'}
         if (lgBreakpoint) {
             style = {maxWidth: '85%', maxHeight: '85%'}
         }
