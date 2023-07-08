@@ -47,3 +47,11 @@ html, body, #root {
 .menuItemLight {
     color: rgba(0, 0, 0, 0.85);
 }
+.modalProjectImage {
+    filter: grayscale(90%);
+    transition: .3s;
+}
+.modalProjectImage:hover {
+    filter: none;
+    transition: .3s;
+}

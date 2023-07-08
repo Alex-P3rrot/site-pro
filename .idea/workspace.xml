@@ -4,35 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e974259-3784-4178-9d10-4b4bf87e7ea8" name="Changes" comment="Update">
-      <change afterPath="$PROJECT_DIR$/assets/images/ReactDashboard/dashboard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/components/charts/BarComponent.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/components/charts/GeoComponent.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/components/charts/LineComponent.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/components/charts/PieComponent.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/geoFeatures.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/mock/BarData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/mock/GeoData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/mock/LineData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/mock/PieData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/views/charts/Bar.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/views/charts/Geo.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/views/charts/Line.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/views/charts/Pie.jsx" afterDir="false" />
+    <list default="true" id="7e974259-3784-4178-9d10-4b4bf87e7ea8" name="Changes" comment="React dashboard update">
+      <change afterPath="$PROJECT_DIR$/assets/images/Ohani/11-44-09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/Ohani/11-44-21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/Ohani/11-44-37.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/Ohani/11-45-02.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Ohani/16-43-40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Ohani/16-43-51.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Ohani/16-43-56.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Ohani/16-44-09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Ohani/16-44-12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Ohani/16-44-14.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/images/imagesData.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/imagesData.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/react/controllers/App/ModalCarousel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/App/ModalCarousel.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/react/controllers/App/ModalProject.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/App/ModalProject.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/react/controllers/App/Project.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/App/Project.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/react/controllers/App/SectionProjects.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/App/SectionProjects.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/views/Calendar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/views/Calendar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/views/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/views/Dashboard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/views/global/SidebarApp.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/views/global/SidebarApp.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/react/controllers/ReactDashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/ReactDashboard.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AppController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AppController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +177,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/var/www/devalex/assets/react/controllers/React-Dashboard",
+    "last_opened_file_path": "/var/www/devalex/assets/images/Ohani",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -204,11 +190,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/images/Ohani" />
       <recent name="$PROJECT_DIR$/assets/react/controllers/React-Dashboard" />
       <recent name="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/views" />
       <recent name="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/components" />
       <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/assets/images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets/react/controllers/App" />
@@ -243,7 +229,7 @@
       <workItem from="1688544170551" duration="10000" />
       <workItem from="1688545049452" duration="705000" />
       <workItem from="1688623458811" duration="585000" />
-      <workItem from="1688801800807" duration="3830000" />
+      <workItem from="1688801800807" duration="4395000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <option name="closed" value="true" />
@@ -373,7 +359,15 @@
       <option name="project" value="LOCAL" />
       <updated>1688544153914</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="React dashboard update">
+      <option name="closed" value="true" />
+      <created>1688809520284</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1688809520284</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -405,7 +399,8 @@
     <MESSAGE value="Update theme" />
     <MESSAGE value="Add personal project &quot;react-dashboard&quot;" />
     <MESSAGE value="Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update" />
+    <MESSAGE value="React dashboard update" />
+    <option name="LAST_COMMIT_MESSAGE" value="React dashboard update" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
