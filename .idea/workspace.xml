@@ -6,9 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="7e974259-3784-4178-9d10-4b4bf87e7ea8" name="Changes" comment="Update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/react/controllers/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Ohani/11-44-09.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/Ohani/11-44-09.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Ohani/11-44-21.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/Ohani/11-44-21.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Ohani/11-44-37.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/Ohani/11-44-37.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Ohani/11-45-02.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/Ohani/11-45-02.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/react/controllers/App/ModalCarousel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/App/ModalCarousel.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/react/controllers/App/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/App/theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/react/controllers/App/ModalProject.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/react/controllers/App/ModalProject.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +171,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/var/www/devalex",
+    "last_opened_file_path": "/var/www/devalex/public",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -180,11 +184,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/assets/images/Ohani" />
       <recent name="$PROJECT_DIR$/assets/react/controllers/React-Dashboard" />
       <recent name="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/views" />
       <recent name="$PROJECT_DIR$/assets/react/controllers/React-Dashboard/components" />
-      <recent name="$PROJECT_DIR$/public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets/react/controllers/App" />
@@ -220,7 +224,8 @@
       <workItem from="1688545049452" duration="705000" />
       <workItem from="1688623458811" duration="585000" />
       <workItem from="1688801800807" duration="4467000" />
-      <workItem from="1688827203199" duration="320000" />
+      <workItem from="1688827203199" duration="1541000" />
+      <workItem from="1688828936791" duration="3161000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <option name="closed" value="true" />
@@ -366,7 +371,15 @@
       <option name="project" value="LOCAL" />
       <updated>1688810004429</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Update">
+      <option name="closed" value="true" />
+      <created>1688827580242</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1688827580242</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
