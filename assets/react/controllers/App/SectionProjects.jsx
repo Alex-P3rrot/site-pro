@@ -1,12 +1,26 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import {Box, Typography} from "@mui/material";
 import {Project} from "./Project"
+import {ThemeContext} from "./theme";
 
 export function SectionProjects() {
+    const {mobileBreakpoint} = useContext(ThemeContext)
+    const gridLength = () => {
+        if (mobileBreakpoint) {
+            return 1
+        } else {
+            if (projectsData.length > 4) {
+                return 4
+            } else {
+                return projectsData.length
+            }
+        }
+    }
+
     return (
         <Box id="sectionProject" paddingY={10}>
-            <Typography textAlign="center" paddingBottom={window.windowWidth > 600 ? 30 : 10} variant="h3">Mes réalisations</Typography>
-            <Box width="100%" display="grid" gridTemplateColumns={`repeat(${projectsData.length}, 1fr)`} sx={{px: 2}}>
+            <Typography textAlign="center" paddingBottom={mobileBreakpoint ? 10 : 30} variant="h3">Mes réalisations</Typography>
+            <Box width="100%" display="grid" gridTemplateColumns={`repeat(${gridLength()}, 1fr)`} px={2} rowGap={5}>
                 {projectsData.map((project, id) => (
                     <Project key={id}
                              title={project.title}
